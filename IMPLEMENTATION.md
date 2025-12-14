@@ -47,9 +47,9 @@ This document outlines the phased approach to implementing the `reference_learni
 
 ### Phase 6: Navigation & Toggle Widgets
 
-- [ ] Create `lib/src/widgets/navigation_buttons.dart` with "Next" and "Previous" buttons.
-- [ ] Create `lib/src/widgets/reference_visibility_toggle.dart` with a button to show/hide the reference.
-- [ ] Create `test/src/widgets/navigation_buttons_test.dart` and `test/src/widgets/reference_visibility_toggle_test.dart` for widget tests.
+- [x] Create `lib/src/widgets/navigation_buttons.dart` with "Next" and "Previous" buttons.
+- [x] Create `lib/src/widgets/reference_visibility_toggle.dart` with a button to show/hide the reference.
+- [x] Create `test/src/widgets/navigation_buttons_test.dart` and `test/src/widgets/reference_visibility_toggle_test.dart` for widget tests.
 
 ### Phase 7: Integrate into Main Page
 
@@ -115,3 +115,4 @@ After completing the tasks within each phase:
 -   **Phase 3 Complete:** Implemented `ReferenceLearningController` with all specified logic and getters. Developed extensive unit tests for the controller, achieving 100% coverage. All tests passed.
 -   **Phase 4 Complete:** Created core UI widgets (`VerseDisplay`, `ReferenceInput`, `FeedbackDisplay`) and their corresponding widget tests. All tests passed.
 -   **Phase 5 Complete (Skeleton Driver App):** Created `examples/simple_demo` skeleton driver app, integrated `reference_learning` package locally, and verified it launches on macOS.
+-   **Phase 6 Complete:** Implemented `NavigationButtons` and `ReferenceVisibilityToggle` widgets with passing widget tests.
