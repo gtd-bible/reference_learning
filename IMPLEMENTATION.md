@@ -38,12 +38,12 @@ This document outlines the phased approach to implementing the `reference_learni
 
 ### Phase 5: Skeleton Driver App
 
-- [ ] Create `examples/simple_demo` (very thin wrapper, supports all platforms).
-    - [ ] Use `create_project` to generate the app.
-    - [ ] Add `reference_learning` as a local dependency.
-    - [ ] Implement a basic `main.dart` that displays a scaffold and one of the package widgets (e.g., `VerseDisplay`) to verify integration.
-- [ ] Ensure the app runs on iOS, Android, Web, Windows, macOS, and Linux.
-- [ ] **Verification:** Launch the app and confirm it runs.
+- [x] Create `examples/simple_demo` (very thin wrapper, supports all platforms).
+    - [x] Use `create_project` to generate the app.
+    - [x] Add `reference_learning` as a local dependency.
+    - [x] Implement a basic `main.dart` that displays a scaffold and one of the package widgets (e.g., `VerseDisplay`) to verify integration.
+- [x] Ensure the app runs on iOS, Android, Web, Windows, macOS, and Linux.
+- [x] **Verification:** Launch the app and confirm it runs.
 
 ### Phase 6: Navigation & Toggle Widgets
 
@@ -114,3 +114,4 @@ After completing the tasks within each phase:
 -   **Phase 2 Complete:** Implemented the `Verse` model, hardcoded verse data, and comprehensive unit tests. All tests passed.
 -   **Phase 3 Complete:** Implemented `ReferenceLearningController` with all specified logic and getters. Developed extensive unit tests for the controller, achieving 100% coverage. All tests passed.
 -   **Phase 4 Complete:** Created core UI widgets (`VerseDisplay`, `ReferenceInput`, `FeedbackDisplay`) and their corresponding widget tests. All tests passed.
+-   **Phase 5 Complete (Skeleton Driver App):** Created `examples/simple_demo` skeleton driver app, integrated `reference_learning` package locally, and verified it launches on macOS.
