@@ -134,6 +134,7 @@ After completing the tasks within each phase:
 - [ ] Run any tests to make sure they all pass.
 
 - [ ] Run `dart_format` to make sure that the formatting is correct.
+- [ ] Ensure appropriate use of fat arrow (`=>`) / expression syntax for concise functions.
 
 - [ ] **Verification:** If the phase involves UI changes or runnable apps:
 
