@@ -41,10 +41,15 @@ This document outlines the phased approach to implementing the `reference_learni
 
 ### Phase 4: Core UI Widgets (Barebones)
 
--   [ ] Create `lib/src/widgets/verse_display.dart` with a `StatelessWidget` to show `Verse.text`.
--   [ ] Create `lib/src/widgets/reference_input.dart` with a `TextField` for user input, and appropriate callbacks.
--   [ ] Create `lib/src/widgets/feedback_display.dart` with a `StatelessWidget` to show correct/incorrect feedback.
--   [ ] Create `test/src/widgets/verse_display_test.dart`, `test/src/widgets/reference_input_test.dart`, and `test/src/widgets/feedback_display_test.dart` for widget tests.
+
+
+- [x] Create `lib/src/widgets/verse_display.dart` with a `StatelessWidget` to show `Verse.text`.
+
+- [x] Create `lib/src/widgets/reference_input.dart` with a `TextField` for user input, and appropriate callbacks.
+
+- [x] Create `lib/src/widgets/feedback_display.dart` with a `StatelessWidget` to show correct/incorrect feedback.
+
+- [x] Create `test/src/widgets/verse_display_test.dart`, `test/src/widgets/reference_input_test.dart`, and `test/src/widgets/feedback_display_test.dart` for widget tests.
 
 ### Phase 5: Navigation & Toggle Widgets
 
@@ -161,3 +166,4 @@ After completing the tasks within each phase:
 -   **Phase 1 Complete:** Created the package, cleaned up boilerplate, and configured metadata. The `flutter create` command didn't support `--empty` for packages, so I manually cleaned the files.
 -   **Phase 2 Complete:** Implemented the `Verse` model, hardcoded verse data, and comprehensive unit tests. All tests passed.
 -   **Phase 3 Complete:** Implemented `ReferenceLearningController` with all specified logic and getters. Developed extensive unit tests for the controller, achieving 100% coverage. All tests passed.
+-   **Phase 4 Complete:** Created core UI widgets (`VerseDisplay`, `ReferenceInput`, `FeedbackDisplay`) and their corresponding widget tests. All tests passed.
