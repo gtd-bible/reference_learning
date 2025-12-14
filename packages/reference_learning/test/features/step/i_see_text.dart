@@ -1,9 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:patrol_finders/patrol_finders.dart';
 
-/// Example: When I see {'text'} text
-Future<void> iSeeText(
-  WidgetTester tester,
-  String text,
-) async {
-  expect(find.text(text), findsOneWidget);
+Future<void> iSeeText(PatrolTester $, String text) async {
+  expect($(text), findsOneWidget);
 }

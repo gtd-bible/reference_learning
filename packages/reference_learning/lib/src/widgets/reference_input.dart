@@ -49,9 +49,14 @@ class _ReferenceInputState extends State<ReferenceInput> {
         controller: _controller,
         onChanged: widget.onChanged,
         onSubmitted: widget.onSubmitted,
-        decoration: const InputDecoration(
+        decoration: InputDecoration(
           labelText: 'Enter Reference',
-          border: OutlineInputBorder(),
+          border: const OutlineInputBorder(),
+          suffixIcon: IconButton(
+            icon: const Icon(Icons.send),
+            onPressed: () => widget.onSubmitted(_controller.text),
+            tooltip: 'Submit',
+          ),
         ),
         textInputAction: TextInputAction.done,
       ),
