@@ -27,11 +27,17 @@ This document outlines the phased approach to implementing the `reference_learni
 
 ### Phase 3: State Management Controller
 
--   [ ] Create `lib/src/state/reference_learning_controller.dart` and implement the `ReferenceLearningController` class extending `ChangeNotifier`.
--   [ ] Initialize the controller with the `kHardcodedVerses` data.
--   [ ] Implement methods: `nextVerse()`, `previousVerse()`, `submitReference(input)`, `toggleReferenceVisibility()`.
--   [ ] Implement getters for `currentVerse`, `userInputReference`, `isInputCorrect`, `isReferenceVisible`.
--   [ ] Create `test/src/state/reference_learning_controller_test.dart` and write unit tests for the `ReferenceLearningController`, ensuring 100% coverage of its logic.
+
+
+- [x] Create `lib/src/state/reference_learning_controller.dart` and implement the `ReferenceLearningController` class extending `ChangeNotifier`.
+
+- [x] Initialize the controller with the `kHardcodedVerses` data.
+
+- [x] Implement methods: `nextVerse()`, `previousVerse()`, `submitReference(input)`, `toggleReferenceVisibility()`.
+
+- [x] Implement getters for `currentVerse`, `userInputReference`, `isInputCorrect`, `isReferenceVisible`.
+
+- [x] Create `test/src/state/reference_learning_controller_test.dart` and write unit tests for the `ReferenceLearningController`, ensuring 100% coverage of its logic.
 
 ### Phase 4: Core UI Widgets (Barebones)
 
@@ -154,3 +160,4 @@ After completing the tasks within each phase:
 -   Prepared implementation plan.
 -   **Phase 1 Complete:** Created the package, cleaned up boilerplate, and configured metadata. The `flutter create` command didn't support `--empty` for packages, so I manually cleaned the files.
 -   **Phase 2 Complete:** Implemented the `Verse` model, hardcoded verse data, and comprehensive unit tests. All tests passed.
+-   **Phase 3 Complete:** Implemented `ReferenceLearningController` with all specified logic and getters. Developed extensive unit tests for the controller, achieving 100% coverage. All tests passed.
