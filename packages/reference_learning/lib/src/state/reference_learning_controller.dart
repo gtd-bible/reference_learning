@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:reference_learning/src/data/hardcoded_verses.dart';
+import 'package:reference_learning/src/data/initial_verses.dart';
 import 'package:reference_learning/src/models/verse.dart';
 
 /// Manages the state and logic for the scripture reference learning process.
@@ -19,7 +19,7 @@ class ReferenceLearningController extends ChangeNotifier {
   /// Initializes with an optional list of [verses]. If no verses are provided,
   /// it defaults to `kHardcodedVerses`.
   ReferenceLearningController({List<Verse>? verses})
-    : _verses = verses ?? kHardcodedVerses {
+    : _verses = verses ?? initialVerses {
     if (_verses.isEmpty) {
       throw StateError('The verse list cannot be empty.');
     }

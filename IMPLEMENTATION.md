@@ -167,3 +167,4 @@ After completing the tasks within each phase:
 -   **Phase 2 Complete:** Implemented the `Verse` model, hardcoded verse data, and comprehensive unit tests. All tests passed.
 -   **Phase 3 Complete:** Implemented `ReferenceLearningController` with all specified logic and getters. Developed extensive unit tests for the controller, achieving 100% coverage. All tests passed.
 -   **Phase 4 Complete:** Created core UI widgets (`VerseDisplay`, `ReferenceInput`, `FeedbackDisplay`) and their corresponding widget tests. All tests passed.
+-   **Rename `kHardcodedVerses` to `initialVerses`:** Renamed the constant and its usage across relevant files and updated the filename `hardcoded_verses.dart` to `initial_verses.dart` to conform to Dart naming conventions. All tests passed after the rename.

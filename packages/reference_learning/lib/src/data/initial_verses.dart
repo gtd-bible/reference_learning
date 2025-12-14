@@ -1,9 +1,9 @@
 import 'package:reference_learning/src/models/verse.dart';
 
-/// Hardcoded list of scripture verses for initial development and demonstration.
+/// List of scripture verses for initial development and demonstration.
 ///
 /// These verses are from Colossians 1:15-17 in the World English Bible (WEB) translation.
-const List<Verse> kHardcodedVerses = [
+const List<Verse> initialVerses = [
   Verse(
     reference: "Col 1:15",
     text:

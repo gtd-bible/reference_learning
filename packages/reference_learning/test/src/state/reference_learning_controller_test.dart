@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:reference_learning/src/data/hardcoded_verses.dart';
+import 'package:reference_learning/src/data/initial_verses.dart';
 import 'package:reference_learning/src/models/verse.dart';
 import 'package:reference_learning/src/state/reference_learning_controller.dart';
 
@@ -140,7 +140,7 @@ void main() {
 
     test('default constructor uses hardcoded verses', () {
       final defaultController = ReferenceLearningController();
-      expect(defaultController.currentVerse, kHardcodedVerses.first);
+      expect(defaultController.currentVerse, initialVerses.first);
       expect(defaultController.currentVerse.reference, 'Col 1:15');
     });
   });
