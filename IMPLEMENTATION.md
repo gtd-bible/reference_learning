@@ -135,6 +135,8 @@ After completing the tasks within each phase:
 
 - [ ] Run `dart_format` to make sure that the formatting is correct.
 - [ ] Ensure appropriate use of fat arrow (`=>`) / expression syntax for concise functions.
+- [ ] Implement styling and theming in a reusable and maintainable way.
+- [ ] Implement styling and theming in a reusable and maintainable way.
 
 - [ ] **Verification:** If the phase involves UI changes or runnable apps:
 
