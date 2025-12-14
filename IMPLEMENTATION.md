@@ -17,9 +17,13 @@ This document outlines the phased approach to implementing the `reference_learni
 
 ### Phase 2: Core Data Model & Hardcoded Data
 
--   [ ] Create `lib/src/models/verse.dart` and define the `Verse` class with `reference`, `text`, and `translation` fields.
--   [ ] Define the `kHardcodedVerses` list in `lib/src/data/hardcoded_verses.dart` using the `Verse` model.
--   [ ] Create `test/src/models/verse_test.dart` and write unit tests for the `Verse` model, ensuring 100% coverage.
+
+
+- [x] Create `lib/src/models/verse.dart` and define the `Verse` class with `reference`, `text`, and `translation` fields.
+
+- [x] Define the `kHardcodedVerses` list in `lib/src/data/hardcoded_verses.dart` using the `Verse` model.
+
+- [x] Create `test/src/models/verse_test.dart` and write unit tests for the `Verse` model, ensuring 100% coverage.
 
 ### Phase 3: State Management Controller
 
@@ -149,3 +153,4 @@ After completing the tasks within each phase:
 -   Changed current directory to `packages/reference_learning`.
 -   Prepared implementation plan.
 -   **Phase 1 Complete:** Created the package, cleaned up boilerplate, and configured metadata. The `flutter create` command didn't support `--empty` for packages, so I manually cleaned the files.
+-   **Phase 2 Complete:** Implemented the `Verse` model, hardcoded verse data, and comprehensive unit tests. All tests passed.
