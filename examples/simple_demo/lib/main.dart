@@ -16,20 +16,7 @@ class ReferenceLearningDemoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Skeleton Driver App'),
-              SizedBox(height: 20),
-              VerseDisplay(
-                verseText: 'This is a placeholder verse to verify integration.',
-              ),
-            ],
-          ),
-        ),
-      ),
+      home: const ReferenceLearningPage(),
     );
   }
 }
