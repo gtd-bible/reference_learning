@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      bdd_widget_test|feature_builder:
+        generate_for:
+          - ../../packages/reference_learning/test/features/**.feature
+        options:
+          step_file_path: ../../packages/reference_learning/test/step/
+          ignore_abstract_steps: true
