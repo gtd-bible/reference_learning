@@ -6,8 +6,7 @@ import 'package:reference_learning/src/models/verse.dart';
 const List<Verse> initialVerses = [
   Verse(
     reference: "Col 1:15",
-    text:
-        "who is the image of the invisible God, the firstborn of all creation.",
+    text: "who is the image of the invisible God, the firstborn of all creation.",
     translation: "WEB",
   ),
   Verse(

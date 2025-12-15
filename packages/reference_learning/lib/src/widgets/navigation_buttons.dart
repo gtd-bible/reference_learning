@@ -21,15 +21,9 @@ class NavigationButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ElevatedButton(
-          onPressed: hasPrevious ? onPrevious : null,
-          child: const Text('Previous'),
-        ),
+        ElevatedButton(onPressed: hasPrevious ? onPrevious : null, child: const Text('Previous')),
         const SizedBox(width: 20),
-        ElevatedButton(
-          onPressed: hasNext ? onNext : null,
-          child: const Text('Next'),
-        ),
+        ElevatedButton(onPressed: hasNext ? onNext : null, child: const Text('Next')),
       ],
     );
   }

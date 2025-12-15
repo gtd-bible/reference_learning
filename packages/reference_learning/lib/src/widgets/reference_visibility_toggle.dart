@@ -6,11 +6,7 @@ class ReferenceVisibilityToggle extends StatelessWidget {
   final VoidCallback onToggle;
 
   /// Creates a [ReferenceVisibilityToggle] widget.
-  const ReferenceVisibilityToggle({
-    super.key,
-    required this.isVisible,
-    required this.onToggle,
-  });
+  const ReferenceVisibilityToggle({super.key, required this.isVisible, required this.onToggle});
 
   @override
   Widget build(BuildContext context) {

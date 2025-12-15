@@ -18,8 +18,7 @@ class ReferenceLearningController extends ChangeNotifier {
   ///
   /// Initializes with an optional list of [verses]. If no verses are provided,
   /// it defaults to `kHardcodedVerses`.
-  ReferenceLearningController({List<Verse>? verses})
-    : _verses = verses ?? initialVerses {
+  ReferenceLearningController({List<Verse>? verses}) : _verses = verses ?? initialVerses {
     if (_verses.isEmpty) {
       throw StateError('The verse list cannot be empty.');
     }
@@ -72,9 +71,7 @@ class ReferenceLearningController extends ChangeNotifier {
   /// Updates [isInputCorrect] and notifies listeners.
   void submitReference(String input) {
     _userInputReference = input;
-    _isInputCorrect =
-        _normalizeReference(input) ==
-        _normalizeReference(currentVerse.reference);
+    _isInputCorrect = _normalizeReference(input) == _normalizeReference(currentVerse.reference);
     notifyListeners();
   }
 

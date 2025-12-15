@@ -15,23 +15,17 @@ class FeedbackDisplay extends StatelessWidget {
     }
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const .all(16.0),
       child: isCorrect!
-          ? const Text(
-              'Correct!',
-              style: TextStyle(color: Colors.green, fontSize: 18),
-            )
+          ? const Text('Correct!', style: TextStyle(color: Colors.green, fontSize: 18))
           : Column(
               children: [
-                const Text(
-                  'Incorrect.',
-                  style: TextStyle(color: Colors.red, fontSize: 18),
-                ),
+                const Text('Incorrect.', style: TextStyle(color: Colors.red, fontSize: 18)),
                 if (correctReference != null)
                   Text(
                     'The correct reference was: $correctReference',
                     style: const TextStyle(fontSize: 16),
-                    textAlign: TextAlign.center,
+                    textAlign: .center,
                   ),
               ],
             ),

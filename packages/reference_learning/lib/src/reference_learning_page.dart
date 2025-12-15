@@ -44,22 +44,21 @@ class _ReferenceLearningPageState extends State<ReferenceLearningPage> {
       builder: (context, child) {
         final Verse currentVerse = _controller.currentVerse;
         final bool canGoPrevious = _controller.currentVerseIndex > 0;
-        final bool canGoNext =
-            _controller.currentVerseIndex < _controller.versesLength - 1;
+        final bool canGoNext = _controller.currentVerseIndex < _controller.versesLength - 1;
 
         return Scaffold(
           appBar: AppBar(title: const Text('Scripture Reference Learning')),
           body: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const .all(16.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: .center,
               children: [
                 VerseDisplay(verseText: currentVerse.text),
                 const SizedBox(height: 20),
                 ReferenceInput(
                   key: ValueKey('reference_input_${currentVerse.reference}'),
                   initialValue: _controller.userInputReference,
-                  onChanged: (value) {
+                  onChanged: (_) {
                     // No-op for now, submission only on enter
                   },
                   onSubmitted: _controller.submitReference,

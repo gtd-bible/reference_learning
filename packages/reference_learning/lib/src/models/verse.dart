@@ -5,11 +5,7 @@ class Verse {
   final String translation; // e.g., "WEB"
 
   /// Creates a [Verse] instance.
-  const Verse({
-    required this.reference,
-    required this.text,
-    required this.translation,
-  });
+  const Verse({required this.reference, required this.text, required this.translation});
 
   @override
   bool operator ==(Object other) {
