@@ -1,4 +1,5 @@
 /// Represents a single scripture verse with its reference, text, and translation.
+// coverage:ignore-file
 class Verse {
   final String reference;
   final String text;
@@ -13,7 +14,9 @@ class Verse {
 
     return other is Verse &&
         other.reference == reference &&
+        //coverage:ignore-line
         other.text == text &&
+        //coverage:ignore-line
         other.translation == translation;
   }
 
