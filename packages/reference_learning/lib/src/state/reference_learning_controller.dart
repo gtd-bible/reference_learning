@@ -24,6 +24,7 @@ class ReferenceLearningController extends ChangeNotifier {
       throw StateError('The verse list cannot be empty.');
     }
     // coverage:ignore-end
+    // consider removing he top line or using an assert?
   }
 
   /// The current verse being displayed for learning.

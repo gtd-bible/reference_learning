@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462836365540",
+    "project_id": "gtd-bible-verses-simple-demo",
+    "storage_bucket": "gtd-bible-verses-simple-demo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462836365540:android:1313db68759611f2c2d4f1",
+        "android_client_info": {
+          "package_name": "com.example.simple_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOnh6qOzrFYHm7pU2idz3iGkT-20O-bBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
