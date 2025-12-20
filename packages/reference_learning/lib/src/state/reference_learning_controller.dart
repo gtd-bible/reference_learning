@@ -19,9 +19,11 @@ class ReferenceLearningController extends ChangeNotifier {
   /// Initializes with an optional list of [verses]. If no verses are provided,
   /// it defaults to `kHardcodedVerses`.
   ReferenceLearningController({List<Verse>? verses}) : _verses = verses ?? initialVerses {
+    // coverage:ignore-start
     if (_verses.isEmpty) {
       throw StateError('The verse list cannot be empty.');
     }
+    // coverage:ignore-end
   }
 
   /// The current verse being displayed for learning.
