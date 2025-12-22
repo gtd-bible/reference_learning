@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      bdd_widget_test|feature_builder:
+        generate_for:
+          - test/features/**.feature
+        options:
+          step_file_path: test/step/
+          ignore_abstract_steps: true
+          tester_type: patrol
+          imports:
+            - 'package:patrol_finders/patrol_finders.dart'
